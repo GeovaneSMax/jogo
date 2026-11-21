@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-hud-canvas: #151A22;
+  --color-hud-panel: #1F2631;
+  --color-hud-elevated: #28313F;
+  --color-gold: #E5A93C;
+  --color-gold-bright: #F4C462;
+  --color-crystal: #38BDF8;
+  --color-essence: #22C55E;
+  --color-combat: #EF4444;
+  --color-parchment: #F8F5EE;
+  --color-parchment-panel: #EFE9DC;
+  --color-ink: #1C2026;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle custom scrollbars for dark HUD and light GDD */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.28);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 169, 60, 0.55);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Heroes Clash",
+  "description": "Jogo de estratégia 2D isométrico de fantasia medieval focado em heróis únicos, sinergias táticas e construção de fortalezas, sem tropas descartáveis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
